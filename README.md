@@ -1,1 +1,1 @@
-eto na nga e
+eto na po
