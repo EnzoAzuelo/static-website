@@ -41,7 +41,133 @@
                     </button>
                 </div>
             </div>
+            <div id="mobile-nav" class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="#about" class="mobile-nav-link">About</a></li>
+                    <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                    <li><a href="#skills" class="mobile-nav-link">Skills & Experience</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </div>
         </div>
+    </header>
+
+    <main class="container">
+
+        <section id="hero" class="section">
+            <div class="hero-grid">
+                <span class="hero-badge">
+                    <span class="pulse-dot"></span> Front-End Developer & UI Designer
+                </span>
+                <h1 class="hero-title"> Creating Modern Digital Experience with Style</h1>
+                <p class="hero-description">
+                    Hello! I'm Joseph Enzo Azuelo. I build reliable, accessible and unique web applications with
+                    clean front-end Design.
+                </p>
+                <div class="hero-cta">
+                    <a href="" class="btn btn-primary">
+                        Explore my Projects <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="" class="btn btn-secondary">
+                        Contact me Here
+                    </a>
+                </div>
+                <div class="profile-frame">
+                    <div class="profile-image-wrapper">
+                        <img src="DSC00768.jpeg" alt="Enzo Azuelo Profile Picture" class="profile-image"
+                            onerror="this.src='https://placehold.co/400x500/2563eb/ffffff?text=Enzo+Azuelo'">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-card">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a 4th year BS Computer Science Student currently trying to improve my skills in Creating
+                            dynamic and creative website UI designs. I am primarily focusing on using figma, html, css and 
+                            canva to produce simple yet functional designs that are more user friendly.
+                        </p>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I enjoy building developer tools, working with scalable modern frontend frameworks, and
+                            collaborating on open-source initiatives. My goal is always to deliver digital experiences
+                            that seamlessly balance functionality with design elegance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="filter-wrapper">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card" data-category="web">
+                    <div class="project-thumbnail">
+                        <img src="IMG_2056.png" alt="OASYS" onerror="this.src='https://placehold.co/600x400/2563eb/ffffff?text=OASYS'">
+                        <div class="project-overlay">
+                            <button onclick="openModal('modal1')" class="overlay-btn" aria-label="View Details"><i class="fa-solid fa-expand"></i></button>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <span class="project-category">Web Application</span>
+                            <h3 class="project-title">Road Defect Detection</h3>
+                            <p class="project-desc">Neurosymbolic AI Road Defect Damage Detection using python with React and Node.js.</p>
+                        </div>
+                        <ul class="project-tags">
+                            <li class="tag-item">React</li>
+                            <li class="tag-item">Node.js</li>
+                            <li class="tag-item">Javascript</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <div class="project-thumbnail">
+                        <img src="IMG_2056.png" alt="RACELINK" onerror="this.src='https://placehold.co/600x400/2563eb/ffffff?text=RACELINK'">
+                        <div class="project-overlay">
+                            <button onclick="openModal('modal1')" class="overlay-btn" aria-label="View Details"><i class="fa-solid fa-expand"></i></button>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <span class="project-category">Web Application</span>
+                            <h3 class="project-title">RACELINK</h3>
+                            <p class="project-desc">WEB BASED Marathon Booking System using html, css and mysql database</p>
+                        </div>
+                        <ul class="project-tags">
+                            <li class="tag-item">HTML</li>
+                            <li class="tag-item">CSS</li>
+                            <li class="tag-item">MYSQL</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
